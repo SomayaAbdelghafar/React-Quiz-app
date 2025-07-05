@@ -47,7 +47,7 @@ export default function Login() {
         <div className="email mt-2">
           <label htmlFor="email" className="w-full ps-1 mb-1 ">
             Registered email address
-          </label>On branch main
+          </label>
           <div
             className={`flex rounded-md border-3 ${
               !errors.email ? "border-white" : "border-red-500"
@@ -61,7 +61,7 @@ export default function Login() {
                 required: "Email is required",
                 pattern: {
                   value: /^[A-Z0-9.]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                  message: "Invalid email address...",
+                  message: "Invalid email address..",
                 },
               })}
               type="text"
